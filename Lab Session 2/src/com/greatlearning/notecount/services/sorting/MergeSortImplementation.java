@@ -1,5 +1,7 @@
 package com.greatlearning.notecount.services.sorting;
-
+/**
+ * @author sohandesai
+ */
 public class MergeSortImplementation {
 
 	/*
@@ -15,7 +17,7 @@ public class MergeSortImplementation {
 			mergeSort(array,start,mid);
 			mergeSort(array,mid+1,end);
 			
-			//merge the elements of two halves in specified order
+			//merge the elements of two halves in specified order i.e. descending order
 			merge(array, start, mid, end);
 		}
 	}
