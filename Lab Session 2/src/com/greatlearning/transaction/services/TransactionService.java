@@ -1,6 +1,11 @@
 package com.greatlearning.transaction.services;
 
 public class TransactionService {
+	/*calls another function findTarget with return type int
+	 * if returned -1 -> print Target not achieved
+	 * else it returns a +ve value indicating the number of
+	 * transactions taken to achieve said target
+	 */
 	public void checkTransaction(int[] array, int target) {
 		int transactions = findTarget(array, target);
 		if(transactions<0) {
@@ -11,6 +16,11 @@ public class TransactionService {
 		}
 	}
 
+	/*
+	 * adds up the transaction amounts until it reaches the target
+	 * if target is achieved->returns the number of transactions required to achieve said target
+	 * if target not achieved->returns -1
+	 */
 	public int findTarget (int[] array, int target) {
 		int sum=0, i=0;
 		while(i<array.length) {
